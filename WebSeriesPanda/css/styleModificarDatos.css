@@ -1,0 +1,126 @@
+*{
+   
+    background-color: #1C2848;
+    text-decoration:none;
+    box-sizing: border-box;
+    color: white;
+    margin-top: auto;
+    margin: 0%;
+    padding: 0%;
+  
+}
+
+/*LOGO IMAGEN*/
+#logoimg{
+    float: inline-start;
+    margin: auto;
+    
+}
+
+/*ELEMENTOS DEL NAVEGADOR*/
+#navElementos{
+    margin-right: auto;
+    font-family: "Century Gothic";
+    font-size: 35px;
+    font-style: normal;
+    text-align: center;
+
+}
+
+
+
+.navUsu{
+    
+    list-style: none;
+    margin: 10px;
+    
+    list-style-type: none;
+    text-align: center;
+    text-decoration-color: #189AB4;
+    margin: 0 10px 0 0;
+    align-items: center;
+    line-height: normal;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    background-color: #fff;
+  }
+
+
+#botones{
+    margin-top: 20px;
+}
+ 
+
+body {
+    text-align: center;
+}
+
+
+.buttons{
+    width: 50%;
+    height: 40px;
+    background: #189AB4;
+    border:none ;
+    color: white;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
+
+}
+
+.controls{
+    width: 100%;
+    border: 1px solid #189AB4;
+    margin-bottom: 15px;
+    padding: 11px 10px;
+    border-radius: 8px;
+}
+
+/*CSS DE MODIFICAR DATOS DE USUARIO*/
+.form-modificar{
+    width: 400px;
+    height: 540px;
+    background: #4e4d4d;
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: 4px 4px 30px; /*Difuminado*/
+    padding: 20px 30px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 50px;
+
+}
+
+ .form-modificar h3{
+    margin: 0;
+    text-align: center;
+    height: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid;
+    font-size: 20px;
+    background: #4e4d4d;
+    font-weight: bold;
+    font-family: "Century Gothic";
+
+}
+
+.form-modificar p {
+height: 30px;
+text-align: center;
+background: #4e4d4d;
+font-family: "Calibri";
+
+}
+
+.form-modificar a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    background: #4e4d4d;
+    font-family: "Calibri";
+}
+
+ .form-modificar a:hover{
+    text-decoration: underline;
+    color: #189AB4;
+
+} 

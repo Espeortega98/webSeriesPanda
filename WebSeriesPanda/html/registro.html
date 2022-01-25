@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <link rel="stylesheet" type="text/css" href="../css/style.css">
+            <link rel="stylesheet" type="text/css" href="../css/styleRegistro.css">
+            <script src="../js/app1.js"></script>
+            <script src="../js/appRegistro.js"></script>
+        
+            <title> SeriesPanda</title>
+            <link rel="shorcut icon" href="../css/Panda Logo 2rec.png">
+        </head>
+        <body>
+            <nav class="navUsu">
+                    <ul class="no.style horizontal">
+                        <img src="../css/logojunto.jpeg"  height="180">
+                        <div id="navElementos">
+                            
+                            <a href="../html/index.html">Inicio &nbsp;</a>
+                            <a href="paginaFavs.html"> Favoritos &nbsp;</a>
+                            <a href="paginaUsuario.html"> Usuario &nbsp;</a>
+                        </div>
+                    </ul>
+            </nav>
+            <form>
+                <section class="form-registro">
+                    <h3>REGISTRO DE USUARIO</h3>
+                    <input class="controls" type="text" name="name" id="name" placeholder="Nombre" autocomplete required>
+                    <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Apellidos" autocomplete required>
+                    <input class="controls" type="email" name="email" id="email" placeholder="Email" autocomplete required >
+                    <input class="controls" type="password" name="password" id="password" placeholder="Contraseña" autocomplete required>
+                    <input class="controls" type="tel" name="phone" id="phone" placeholder="Teléfono" autocomplete required>
+                    <input class="controls" type="date" name="date" id="date" placeholder="Fecha de nacimiento" autocomplete required>
+                  
+                    <button type="button"  class="buttons" onclick="registro()">Registrar</button>
+                    <p>¿Ya tienes cuenta?</p>
+                    <p><a href="../html/paginaUsuario.html"> INICIA SESIÓN</a></p>            
+                </section>
+            </form>
+
+        </body>        
+</html>

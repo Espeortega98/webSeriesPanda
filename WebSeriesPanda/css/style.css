@@ -1,0 +1,310 @@
+*{
+   
+    background-color: #1C2848;
+    text-decoration:none;
+    box-sizing: border-box;
+    color: white;
+    margin-top: auto;
+    margin: 0%;
+    padding: 0%;
+  
+}
+
+/*LOGO IMAGEN*/
+#logoimg{
+    float: inline-start;
+    
+}
+
+/*ELEMENTOS DEL NAVEGADOR*/
+#navElementos{
+    margin-right: 200px;
+    font-family: "Century Gothic";
+    font-size: 35px;
+    font-style: normal;
+    text-align: center;
+
+}
+
+nav {
+    
+    list-style: none;
+    margin: 10px;
+    
+    list-style-type: none;
+    text-align: center;
+    text-decoration-color: #189AB4;
+    margin: 0 10px 0 0;
+    align-items: center;
+    line-height: normal;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    background-color: #fff;
+  }
+
+
+#botones{
+    margin-top: 20px;
+}
+  
+/*BOTON BUSCAR DEL NAV*/
+#buscar{
+    padding: 10px;
+    border-radius: 5px;
+        
+    border: 0;
+    border: 2px solid #39c;
+    margin-bottom: 30px;
+    position: absolute;
+    margin-left: 20px;
+}
+
+body {
+    text-align: center;
+}
+
+input[name="slider-select-element"] {
+    display: none;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+
+/*CSS DEL CARRUSEL*/
+#slider-arrows {
+    margin: -10% auto 0 auto;
+    width: 80%;
+}
+
+#slider-box {
+    -moz-animation: autoSlider 15s infinite linear;
+    -o-animation: autoSlider 15s infinite linear;
+    -webkit-animation: autoSlider 15s infinite linear;
+    animation: autoSlider 15s infinite linear;
+
+    -webkit-transition: all 0.75s ease;
+    -moz-transition: all 0.75s ease;
+    -ms-transition: all 0.75s ease;
+    -o-transition: all 0.75s ease;
+    transition: all 0.75s ease;
+
+    margin-top: 20px;
+    height: 100%;
+    width: 300%;
+}
+
+#slider-container {
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden; /*El contenido es recortado y no se muestran barras de posición.*/
+    text-align: left;
+    width: 98.5%; /*tamaño del carrusel(largo de pantalla)*/
+    background-size: auto;
+}
+
+.element-three,
+.element-two,
+.element-one {
+    min-height: 400px;
+    max-height: 100%;
+    width: 100%;
+    background-size: auto;
+}
+
+.element-one {
+    background-image: url("../css/imagen11Carro.jpg");
+}
+
+.element-two {
+    background-image: url("../css/imagen2Carro.jpg");
+}
+
+.element-three {
+    background-image: url("../css/carro3.jpg");
+}
+
+.slider-element {
+    float: left;
+    width: 33.333%;
+}
+/*ANIMACIONES PARA EL SLIDER*/
+@-moz-keyframes autoSlider {
+    0% {
+        margin-left: 0;
+    }
+    30% {
+        margin-left: 0;
+    }
+    35% {
+        margin-left: -100%;
+    }
+    65% {
+        margin-left: -100%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    95% {
+        margin-left: -200%;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+
+@-webkit-keyframes autoSlider {
+    0% {
+        margin-left: 0;
+    }
+    30% {
+        margin-left: 0;
+    }
+    35% {
+        margin-left: -100%;
+    }
+    65% {
+        margin-left: -100%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    95% {
+        margin-left: -200%;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+
+@keyframes autoSlider {
+    0% {
+        margin-left: 0;
+    }
+    30% {
+        margin-left: 0;
+    }
+    35% {
+        margin-left: -100%;
+    }
+    65% {
+        margin-left: -100%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    95% {
+        margin-left: -200%;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+
+  .responsive {
+    padding: 0 10px;
+    float: left;
+    width: 25%;
+    height: 600px;
+  } 
+
+  .btnFavs{
+    padding: 10px;
+    border-radius: 5px;
+       
+   border: 0;
+   border-radius: 5px;
+   border: 2px solid #39c;
+   margin-bottom: 30px;
+   margin-top: 15px;
+
+  }
+/*CSS CATALOGO DE LAS IMAGENES*/
+#catalogo, .grid{
+    width: 98.5%; 
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /*funcion que le indicas que quieres 4 columnas de 1 francion cada una */
+    grid-template-rows: repeat(3, 730px);
+    gap: 15px; /*separacion entre tarjetas*/
+}
+
+.grid .tarjetas, #catalogo .tarjetas{
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    background-color: #225279;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    filter: brightness(0.8);
+}
+
+.grid .tarjetas:hover, #catalogo .tarjetas:hover{
+    filter: brightness(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+.grid .tarjetas .contenedorImg, #catalogo .tarjetas .contenedorImg{
+   height: 580px;
+   background-color: #225279;
+}
+
+.grid .tarjetas .contenedorImg img, #catalogo .tarjetas .contenedorImg img{
+    width:100%;
+}
+
+.grid .tarjetas p, #catalogo .tarjetas p{
+    background-color: #225279;
+    color: #fff;
+    line-height: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9em;
+}
+
+
+.grid .tarjetas .descripcion, #catalogo .tarjetas .descripcion{
+    width: 100%;
+    height: 80px;  
+    background-color: #225279;
+    display: flex;
+    align-items: center;
+}
+
+
+/* CSS del grid de buscar*/
+#catalogobusqueda {
+    margin: 0 10px;
+    display: none;
+}
+
+
+
+ /* boton barra busqueda */
+.btnBuscar{
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+   border: 0;
+   border-radius: 5px;
+   border: 2px solid #39c;
+   /* margin-bottom: -10px;
+   margin-top: 0px; */
+   margin-left: 260px;
+}
+
+
+/* ESTO ES PARA PROBAR LOS EVENT LISTENER, ES UNA PRUEBA, CUANDO SE ACABE LA PRUEBA SE BORRA, QUE PARA ESO SON LAS PRUEBAS CAPISCI? */
+#botonacos{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    border: 2px solid green;
+    margin-top: 20px;
+}
+.btn {
+    padding: 10px;
+}

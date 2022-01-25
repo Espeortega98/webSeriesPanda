@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">  
+    <title>SeriesPanda</title>
+    <link rel="shorcut icon" href="../css/Panda Logo 2rec.png">
+  </head>
+
+  <body>
+    <!-- NAVEGADOR -->
+    <nav>
+      <ul class="no.style horizontal">
+        <img id="logoImg" src="../css/logojunto.jpeg" height="180">
+        <div id="navElementos">
+        
+          <a href="../html/index.html">Inicio    &nbsp;</a>
+          <a id="favoritos">  Favoritos   &nbsp;</a>
+          <a onclick="logged()" >  Usuario   &nbsp;</a>
+          <input type="text" name="buscador" id="buscar" placeholder="Buscar" size="25" autofocus>
+          <button class="btnBuscar" id="boton-info" onclick="buscar()">Buscar</button>
+        </div>
+      </ul>
+    </nav>
+
+
+    <!-- SLIDER -->
+    <div id="page">
+      <section>
+        <div id="slider-container">
+          <div id="slider-box">
+            <div class="slider-element">
+              <article class="element-one">
+              </article>
+            </div>
+            <div class="slider-element">
+              <article class="element-two">
+              </article>
+            </div>
+            <div class="slider-element">
+              <article class="element-three">
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div><br>
+
+    <!-- Catálogo estándar -->
+    <section class = "grid" id="catalogo">
+      
+      <div class="tarjetas">
+        <div class="contenedorImg">
+          <a target="_blank" href="../css/juegoDeTronos.jpg">
+            <!--Al pinchar en la img sale en una pag web nueva-->
+            <img src="../css/juegoDeTronos.jpg" id="juegoDeTronos" alt="juegoDeTronos" height="547">
+          </a>
+        </div>
+        <div class="descripcion">
+          <p id="p1">Nueve familias luchan por el control de las tierras de Poniente, mientras que un antiguo
+            enemigo regresa después de estar inactivo durante milenios.</p>
+        </div>
+      </div>
+
+      <div class="tarjetas">
+        <div class="contenedorImg">
+          <a target="_blank" href="../css/breakingBad.jpg">
+            <img src="../css/breakingBad.jpg" id="breakingBad" alt="breakingBad" height="547">
+          </a>
+        </div>
+        <div class="descripcion">
+          <p id="p2">Un profesor de química de la escuela secundaria diagnosticado con cáncer de pulmón inoperable
+            se dedica a fabricar y vender metanfetamina para asegurar el futuro de su familia.</p>
+        </div>
+      </div>
+
+
+      <div class="tarjetas">
+        <div class="contenedorImg">
+          <a target="_blank" href="../css/Snowpiercer.jpg">
+            <img src="../css/Snowpiercer.jpg" id="Snowpiercer" alt="Snowpiercer" height="547">
+          </a>
+        </div>
+        <div class="descripcion">
+          <p id="p3">Siete años después de que el mundo se haya convertido en un páramo helado, los restos de la
+            humanidad habitan en un tren en constante movimiento</p>
+        </div>
+      </div>
+
+
+      <div class="tarjetas">
+        <div class="contenedorImg">
+          <a target="_blank" href="../css/the-walking-dead-city-i15032.jpg">
+            <img src="../css/the-walking-dead-city-i15032.jpg" id="theWalkingDead" alt="theWalkingDead" height="547">
+          </a>
+        </div>
+        <div class="descripcion">
+          <p id="p4">Rick Grimes se despierta de un coma para descubrir que el mundo está en ruinas y que está
+            repleto de zombies. Debe liderar a un grupo para mantenerse con vida.</p>
+        </div>
+      </div>
+
+
+      <div class="tarjetas">
+        <div class="contenedorImg">
+          <a target="_blank" href="../css/sexEducation.jpg">
+            <img src="../css/sexEducation.jpg" id="sexEducation" alt="sexEducation" height="547">
+          </a>
+        </div>
+        <div class="descripcion">
+          <p id="p5">Un adolescente con una madre terapeuta sexual se une a una compañera del instituto para
+            establecer una clínica clandestina de terapia sexual.</p>
+        </div>
+      </div>
+
+
+      <div class="tarjetas">
+        <div class="contenedorImg">
+          <a target="_blank" href="../css/Vikingos.jpg">
+            <img src="../css/Vikingos.jpg" id="Vikingos" alt="Vikingos" height="547">
+          </a>
+        </div>
+        <div class="descripcion">
+          <p id="p6">El brutal y misterioso mundo de Ragnar Lothbrok, un guerrero vikingo y granjero que anhela
+            explorar las costas lejanas del océano.</p>
+        </div>
+      </div>
+
+
+      <div class="tarjetas">
+        <div class="contenedorImg">
+          <a target="_blank" href="../css/you.jpg">
+            <img src="../css/you.jpg" id="you" alt="you" height="547">
+          </a>
+        </div>
+        <div class="descripcion">
+          <p id="p7">Una historia de amor del siglo XXI sobre un obsesivo, pero brillante encargardo de una
+            libreria, que hace todo lo posible por enamorar a la chica de sus sueños.</p>
+        </div>
+      </div>
+
+
+      <div class="tarjetas">
+        <div class="contenedorImg">
+          <a target="_blank" href="../css/the100.jpg">
+            <img src="../css/the100.jpg" id="the100" alt="the100" height="547">
+          </a>
+        </div>
+        <div class="descripcion">
+          <p id="p8">Un apocalipsis nuclear destruye la vida humana en la Tierra. Los únicos supervivientes son los
+            habitantes de las estaciones espaciales internacionales. La escasez de recursos los obliga a tomar medidas
+            desesperadas.</p>
+        </div>
+      </div>
+
+
+      <div class="tarjetas">
+        <div class="contenedorImg">
+          <a target="_blank" href="../css/rickYMorty.jpg">
+            <img src="../css/rickYMorty.jpg" id="rickyMorty" alt="rickYMorty" height="547">
+          </a>
+        </div>
+        <div class="descripcion">
+          <p id="p9">Rick, un científico alcohólico, secuestra a su influenciable nieto, 
+            Morty, para vivir peligrosas aventuras a través de nuestro cosmos y universos paralelos.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Catálogo Busqueda -->
+    <section class = "grid" id="catalogobusqueda">
+    </section>
+
+    <!-- Catálogo Favs -->
+    <section class = "grid" id="catalogoFavs">
+    </div>
+  </body>
+
+<!-- JS -->
+  <script src="../js/app1.js"></script>
+  <script src="../js/barraBusqueda.js"></script>
+  <script src="../js/appFavs.js"></script>
+  
+</html> 

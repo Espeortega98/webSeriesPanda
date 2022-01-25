@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar datos de usuario</title>
+    <link rel="shorcut icon" href="../css/Panda Logo 2rec.png">
+    <link rel="stylesheet" type="text/css" href="../css/styleModificarDatos.css"> 
+    <script src="../js/app1.js"></script> 
+    <script src="../js/modificarDatos.js"></script>
+    <script src="../js/barraBusqueda.js"></script>
+
+</head>
+<body>
+    <nav class="navUsu">
+        <ul class="no.style horizontal">
+            <img src="../css/logojunto.jpeg"  height="180">
+            <div id="navElementos">
+                
+                <a href="../html/index.html">Inicio &nbsp;</a>
+                <a id="favoritos"> Favoritos &nbsp;</a>
+                <a> Usuario &nbsp;</a>
+        
+            </div>
+        </ul>
+    </nav>
+
+    <form>
+        <section class="form-modificar">
+            <h3>MODIFICAR EL USUARIO</h3>
+            <input class="controls" type="text" id="nameMd" placeholder="Nombre">
+            <input class="controls" type="text" id="apellidosMd" placeholder="Apellidos">
+            <input class="controls" type="text" id="emailMd" placeholder="Email">
+            <input class="controls" type="password" id="passwordMd" placeholder="Contraseña">
+            <input class="controls" type="tel" id="phoneMd" placeholder="Teléfono">
+            <input class="controls" type="date" id="dateMd" placeholder="Fecha de nacimiento">
+          
+            <button type="button"  class="buttons" onclick="modificarDatosBoton()">Modificar datos</button>   
+            <button type="button" class="buttons" onclick="cerrarSesion()">CERRAR SESIÓN</button>  
+                
+        </section>
+    </form>
+    
+</body>
+</html>
